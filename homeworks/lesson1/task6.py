@@ -14,10 +14,10 @@
 # 6-й день: 3,22
 # Ответ: на 6-й день спортсмен достиг результата — не менее 3 км.
 
-result_a = float(input("Enter first day result"))
-result_b = float(input("Enter result in given day"))
+result_a = float(input("Enter first day result "))
+result_b = float(input("Enter result in given day "))
 day=1
-while result_a < result_b:
+while result_a < result_b: # на эту строку Питон ругается: TypeError: '<=' not supported between instances of 'tuple' and 'float'
     result_a = result_a + result_a*0, 1
     day = day + 1
 print(f"On the {day}  day")
