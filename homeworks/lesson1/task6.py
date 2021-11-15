@@ -17,7 +17,7 @@
 result_a = float(input("Enter first day result "))
 result_b = float(input("Enter result in given day "))
 day=1
-while result_a < result_b: # на эту строку Питон ругается: TypeError: '<=' not supported between instances of 'tuple' and 'float'
-    result_a = result_a + result_a*0, 1
+while result_a < result_b: 
+    result_a = result_a + result_a*0.1
     day = day + 1
 print(f"On the {day}  day")
