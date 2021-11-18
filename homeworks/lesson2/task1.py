@@ -7,4 +7,4 @@ list = [1.2, 2, True, "String:", [2, 3]]
 i = 0
 while i < len(list):
     print(type(list[i]))
-    i += 1
+
