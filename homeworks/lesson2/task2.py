@@ -10,10 +10,14 @@ while i < int(len):
     print("Enter item №", i)
     result_list.append(input())
     i += 1
-print(result_list())
+print(result_list)
 
 while j < int(len)//2:
-    result_list.insert(i*2, i*2+1)
-    result_list.insert(i*2, temp)
-    i += 1
+    a = result_list[j*2]
+    temp = result_list[j*2]
+    b = result_list[j*2+1]
+    print(a, b)
+    result_list.insert(a, b)
+    result_list.insert(b, temp)
+    j += 1
 print(result_list)
