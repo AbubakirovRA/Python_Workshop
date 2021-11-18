@@ -5,7 +5,6 @@
 
 len = input("Enter the number of items in the list ")
 i = 0
-j = 0
 result_list = []
 while i < int(len):
     print("Enter item №", i)
