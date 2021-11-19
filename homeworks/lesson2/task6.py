@@ -36,10 +36,23 @@ while answer == "y":
     coast = (input("Enter Coast of Item: "))
     quantity = (input("Enter Quantity of Item: "))
     unit = (input("Enter Unit of Item: "))
-    
-    dict_items = dict({'название': name, 'цена': coast, 'количество': quantity, 'ед.изм.': unit})
+
+    dict_items = dict({'название': name, 'цена': coast,
+                      'количество': quantity, 'ед.изм.': unit})
     list.append(dict_items)
 
     result_list.append(list)
     answer = input("Do you like enter new item's info?")
 print(result_list)
+length=len(result_list)
+
+flag=input("Do You want to see analytical info?")
+if flag=="y":
+    dict_temp = dict(result_list)
+    new_dict = {}
+    name_list=[]
+    for key, value in dict_temp.items():
+            name_list.append(value['название'])
+print(name_list)
+
+
