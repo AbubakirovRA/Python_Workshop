@@ -13,11 +13,11 @@ with open('text_3.txt','r', encoding='utf-8') as f:
             with open('task_3.txt', 'r', encoding='utf-8') as file:
                 for line in file:
                     wages[line.split()[0]] = float(line.split()[1])
-            print('Меньше 20000 получают:')
+            print('Меньше  20000  получают:')
             for name, wage in wages.items():
                 if wage < 20000:
                     print(name)
-            print(f'Средняя зарплата равна {sum(wages.values()) / len(wages)}') 
+            print(f'Средняя  зарплата  равна  {sum(wages.values()) / len(wages)}') 
         except IOError:
             print('Бухгалтер сбежал с ведомостью. Зарплаты не будет')
         except:

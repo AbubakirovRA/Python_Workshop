@@ -18,5 +18,5 @@ with open("text_4_translate.txt", 'w', encoding='utf-8') as f:
         try:
             f.write(Translator().translate(text, dest='ru').text)
         except AttributeError:
-            print('DDos атака была отражена темными силами гугла. Но зло всегда проигрывает, ведь на стороне добра - упорство!')
+            print('DDos атака  была  отражена  темными  силами  гугла. Но зло всегда проигрывает, ведь на стороне добра - упорство!')
 

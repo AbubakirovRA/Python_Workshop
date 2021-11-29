@@ -17,5 +17,5 @@ with open('task_1.txt', 'w', encoding='utf-8') as my_file:
 my_file = open("text_1.txt", 'w', encoding='utf-8')
 line = " "
 while line:
-    line = input("пишите или не пишите!: ")
+    line = input("Пишите или не пишите!: ")
     my_file.write(f"{line}\n") if line != '' else my_file.close()
